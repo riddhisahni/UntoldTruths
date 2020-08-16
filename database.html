@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    
+    
+<head>
+    <meta charset="utf-8"/>
+    <title>Untold Truths</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <div class="logo-wrapper">
+                <img src="images/logo.jpg" alt="">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="spotlight.html">Spotlight</a></li>
+                    <li><a href="database.html">Database</a></li>
+                    <li><a href="addinfo.html">Add Information</a></li>
+                    <li><a href="petitions.html">Petitions</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+        
+        <div class="content-wrapper">
+            
+            <div class="portfolio-items-wrapper">
+                
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/patsy.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        
+                        
+                        <div class="subtitle">
+                            <a href="patsy.html">Patsy Takemoto Mink</a>
+                            <p>The first woman of color elected to Congress</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/dolores.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        
+                        
+                        <div class="subtitle">
+                            <a href="Dolores.html">Dolores Huerta</a>
+                            <p>Labor Leader and Activist</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/kalpana2.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        
+                        
+                        <div class="subtitle">
+                            <a href="Kalpana.html">Kalpana Chawla</a>
+                            <p>First Woman of Indian Origin to go to Space</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/audre.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        
+                        
+                        <div class="subtitle">
+                            <a href="Audre.html">Audre Lorde</a>
+                            <p>Black queer writer and activist</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/lyda.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        
+                        
+                        <div class="subtitle">
+                            <a href="lyda.html">Lyda Conley</a>
+                            <p>Wyandot-American lawyer </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    
+    </div>
+        
+
+</body>
+
+<script>
+    
+    const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper')
+    
+    portfolioitems.forEach(portfolioItem => {
+        
+        portfolioItem.addEventListener('mouseover', () => {
+            
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        
+        portfolioItem.addEventListener('mouseout', () => {
+            
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+        
+    })
+ </script>
+
+</html>
+

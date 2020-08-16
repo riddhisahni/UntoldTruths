@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    
+    
+<head>
+    <meta charset="utf-8"/>
+    <title>Untold Truths</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo-wrapper">
+                <img src="images/logo.jpg" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="spotlight.html">Spotlight</a></li>
+                    <li><a href="database.html">Database</a></li>
+                    <li><a href="addinfo.html">Add Information</a></li>
+                    <li><a href="petitions.html">Petitions</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end .navbar-->
+    </div> <!-- end .container-->
+        
+    <div class="search">
+        <h2>Search</h2>
+        <input type="text" placeholder="Search.." name="search" id="myText">
+        <button type="submit" onclick="searchPerson()" ><i class="fa fa-search"></i>Submit</button>
+    </div> <!-- end .search-->
+
+    <script>
+        function searchPerson() {
+            var x = document.getElementById("myText").value;
+            var str = x.toLowerCase();
+            if ( (str == "patsy") || (str == "patsy takemoto mink") || (str == "mink") ) {
+                window.open("patsy.html");
+            }
+            else if ( (str == "dolores") || (str == "dolores huerta") || (str == "huerta") ) {
+                window.open("Dolores.html");
+            }
+            else if ( (str == "kalpana") || (str == "kalpana chawla") || (str == "chawla") ) {
+                window.open("Kalpana.html");
+            }
+            else if ( (str == "audre") || (str == "audre lorde") || (str == "chawla") ) {
+                window.open("Audre.html");
+            }
+            else if ( (str == "lyda") || (str == "lyda conley") || (str == "conley") ) {
+                window.open("lyda.html");
+            }   
+        }
+    </script>
+
+</body>
+</html>
